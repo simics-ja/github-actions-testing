@@ -1,0 +1,11 @@
+name: Run tests
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: access file
+    steps:
+      - uses: actions/checkout@v2
+      - name: ls
+        run: ls
